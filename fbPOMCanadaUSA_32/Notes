@@ -1,0 +1,2025 @@
+Declare a variable
+Initiate a variable
+
+Declare a method
+Invoke/call a method
+
+
+Microsoft office: https://www.wps.com/    // install offline version
+				: mvnrepository.com
+				
+Dependencies:
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.53.0</version>
+	</dependency>
+ 	 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>2.53.0</version>
+	</dependency>
+	
+TestNG:
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.10</version>
+    <scope>test</scope>
+</dependency>
+
+
+Data Types:		Data Types:		Data Types:		Data Types:		Data Types:
+Data Types:		Data Types:		Data Types:		Data Types:		Data Types:
+
+
+1. Primitive/built in data types: byte, short, int,long, float, double, char, boolean
+			
+Whole number:byte, short, int,long, 		
+Decimal point:float, double, 
+Character: char 							//l, a, b, #
+Logical: boolean							//boolean true or boolean false
+			
+* short x (+, -, *, /, %) short y = int z
+* byte x (+, -, *, /, %) byte y = int z
+* or write:
+    short x;
+	    short y;
+	    short z;	// short + short = int
+	    x = 12;
+	    y = 45;
+	    z = (short)(x + y)	//short in bracket
+			 	
+2. Non Primitive/customized/reference/user defined data types: We need to create object for Non Primitive data type
+
+	String m="Chi";
+			 
+3. Steps of variable creation:
+	Declare a variable [int x;]
+	Initiate a variable	[x=20;]	
+	
+	int x=20;	// variable =x
+
+Variable: Variable is a placeholder/memory address to store a value/data.	
+		
+Operator:		Operator:		Operator:		Operator:		Operator:
+Operator:		Operator:		Operator:		Operator:		Operator:
+
+		 
+1. Assignment Operator: = (equals to)
+		 
+2. Arithmetic Operator: + (Plus), - (minus), *(asterisk), /(division), %(reminder, modulus) = Arithmetic expression / z / result would be a number/integer
+		 	
+3. Comparison Operator: <, >, <=, >=, ==, != : 
+ 	z = One Boolean Expression & result would be boolean
+		 	
+4. Logical operator: 
+		 	
+	&& (and/double ampersand): z = (boolean) && (boolean) = both true = result true
+	|| (or/double pipes): z = (boolean) || (boolean) = one true = result true
+	! (not/negate): z = ! (boolean)
+
+	z = Two Boolean Expression & result would be boolean
+		 	 
+		 
+		
+Method		Method		Method		Method		Method
+Method		Method		Method		Method		Method
+	
+		 
+Method name: Must use an action word/verb; we declare method outside of any method 
+Steps:
+
+1. Declare a method [public static void main/add/subtract/any_name (){}]: Declared outside of any method
+2. Invoke/call the method [methodName()]
+
+* Argument: Declare a variable inside the () of a method [public static void add (int x, int y) {}]
+		 
+Types:
+1. No argument method: [public static void add () {}]
+2. Argument method: [public static void add (int x, int y) {}]
+3. MethodWithReturnType:[public static int add (int x, int y) {}]
+
+Example: No argument method & Argument method
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		toyCalculator();	// No argument Method invoked/called
+		add(80, 50);		// Argument Method invoked/called
+		
+	}
+	//No argument Method
+	public static void toyCalculator () {
+		
+		int x;				// declare
+		int y;	
+		int z;	
+		x = 85;				// initialize
+		y = 20;	
+		z = x + y;	
+		System.out.println(z);
+	}
+	// Argument method:
+	public static void add (int x, int y) {
+		int z;
+		z = x + y;
+		System.out.println(z);
+		}
+		
+MethodWithReturnType Steps: 
+Rule1: Write type (int, boolean, etc.) [public static boolean(based on return type) isEqual(int x, int y) {}]
+Rule2: Write return statement [return z;]
+Rule3: When we invoke/call the method, the return must be stored [boolean/int/String r;]
+
+Example:MethodWithReturnType
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(add(12, 13));
+		
+		int m;
+		m = add(100,200);	// m : depends on return type: int
+		System.out.println(m);
+		
+		int n;
+		n = m * 10;			// utilizing return value
+		System.out.println(n);
+		
+		int o;
+		o = add(100, 20) + add(1000, 500);	//utilizing return value
+		System.out.println(o);
+
+	}
+	
+	public static int add (int x, int y) {
+		int z;
+		z = x + y;
+		
+		return z;
+		
+	}
+		 
+		 
+Object		Object 		Object		Object 		Object   
+Object		Object 		Object		Object 		Object   		  	
+	
+		  	
+Class: 
+Design or blueprint of an object 
+Class contains variables and methods - Static variables and Static methods
+Class is a customize data type [int x;______A t =....: left side of a variable like int x;]
+		  	
+		
+Object: 
+Outcome/instance of a class.
+Object contain variables and methods - instance variables and instance methods [static shouldn't be mentioned]
+		  
+		  
+Invoke/call Instance Method: Steps:
+When we run a program, instance method stays inside an object. To use an instance method-
+	1. Create an object
+	ClassName variable = new ClassName(); 
+	[EX: A t = new A()] 					[t is also called reference variable]
+	* new is an operator which creates object
+	. is an accessing operator (t.>>>> to access/invoke/call inside an objest)
+		 	
+	2. Invoke/call/Access an object:
+	To access, we should store this value as follows:
+	int r;
+	r = variable.methodName (ValueOfArgument1, ValueOfArgument2) 
+	[Ex: r = t.additionMethod(10,20)]
+	sout(r);
+		 	
+Example:
+		 
+	public class A {
+		
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+				
+			A t = new A();	// object creation
+			int r;
+			r = t.add(20, 50);	// to access the object
+			System.out.println(r);
+		
+		}
+		public int add (int x, int y) {
+			int z;
+			z = x + y;
+			return z;
+			}
+		 	
+Instance Variables: Steps:
+	1. Create/declare a variable outside of any method [char x;]
+	2. Initialize the variable in a Constructor, once Constructor is done:  		[]
+	3. Create an object [from constructor] [D r = new D('Y');] [where Y = argument value]
+	4. Invoke & save the value:
+		 char m;	[type of m = instance variable type]
+		 m = r.x; [invoke & save the value]
+		 
+		 
+Constructor: Constructor name = Class name [public ClassName(){}] and 
+Doesn't have static / void keyword or return type [public D(char j){}]
+Constructor is a special kind of method 
+		 			  
+		 Initialize the Instance Variable [x = j, if 'i' is an argument]
+		 			  
+		 *Constructor might have arguments
+		 *Constructor is a special kind of method
+		 			  
+		 
+	 public class D {
+	
+		char x;
+	
+		public D(char j) {
+			x = j;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		D r = new D('Y');
+		char m;
+		m = r.x;
+		System.out.println(m);
+
+	}
+
+}
+
+Static and Instance Methods:
+
+Static Methods:
+1. public static void action()
+2. public static void action (arg)
+3. public static int action ()
+4. public static int action (arg)
+
+Instance Methods:
+5. public void action()
+6. public void action (arg)
+7. public int action ()
+8. public int action (arg)
+
+
+1. Write a method which will show square of 8 in console.
+   Write a method which will show sum of 100 & 13.6 in console.
+
+public static void main (String [] args){
+	add();
+}
+public static void square (){
+	int number1;
+	int result;
+	number1 = 8;
+	result = number1 * number1;
+	System.out.println(result);
+}
+public static void add(){
+	int x;
+	float y;
+	float z;
+	x = 100;
+	y = 13.6f;
+	z = x + y;
+	System.out.println(z);
+}
+
+
+2. Write a method which takes arguments and display their sum in console.
+
+public static void main (String [] args){
+	addition(12, 10);
+}
+public static void addition(int number1, int number2){
+	int result;
+	result = number1 + number2;
+	System.out.println(result);
+}
+
+3. Write a method which will return the difference between 100 & 67.
+
+public static void main (String [] args){
+	int diff;
+	diff = difference();
+	System.out.println(diff);
+}
+public static int difference(){
+	int firstNumber;
+	int secondNumber;
+	int result;
+	firstNumber = 100;
+	secondNumber = 67;
+	result = firstNumber - secondNumber;
+	return result;	
+}
+
+4. Write a method which will take two arguments and return the difference between two numbers.
+
+public static void main (String [] args){
+	int result;
+	result = difference (100, 90);
+	System.out.println(result);
+}
+public static int difference(int x, int y){
+	int z;
+	z = x - y;
+	return z;
+}
+
+5. Write a method which will add two numbers & display the number in console. Remember don't use static method.
+
+public static void main (String [] args){
+
+		EightMethods5 t = new EightMethods5();
+		t.add();
+	}	
+	public void add(){
+		int x;
+		int y;
+		int z;
+		x = 2;
+		y = 5;
+		z = x + y;
+		System.out.println(z);
+	}
+
+6. Write void function which will take one argument & display the opposite number in console. Remember don't use static method.
+
+public static void main(String[] args) {
+		// Write void function which will take one argument & display the opposite number in console. Remember don't use static method.
+
+		EightMethods6 t = new EightMethods6();
+		t.oppositeNumber(1001);		
+	}
+	public void oppositeNumber(int x) {
+		int z;
+		z = x * (-1);
+		System.out.println(z);
+	}
+
+7. 	Write a function which will return sum of two numbers. Remember don't use static method.
+
+public static void main(String[] args) {
+
+		EightMethods7 t = new EightMethods7();
+		t.sum();
+	}
+	public int sum() {
+		int x;
+		int y;
+		int z;
+		x = 100;
+		y = 500;
+		z = x + y;
+		System.out.println(z);
+		return z;
+	}
+
+8. Write a function which will take one argument return the opposite number. Remember don't use static method.
+
+public static void main(String[] args) {
+
+		EightMethods8 t = new EightMethods8();
+		int a;
+		a = t.oppositeNumber(101);
+		System.out.println(a);
+	}
+	
+	public int oppositeNumber(int x) {
+		int z;
+		z = x * (-1);
+		System.out.println(z);
+
+		return z;
+	}
+
+
+Conditional statement		Conditional statement		Conditional statement
+Conditional statement		Conditional statement		Conditional statement
+
+1. if statement;
+	if (boolean expression) {	
+	}
+	
+2. if else statement;
+	if (boolean expression) {
+		
+	}
+	else if (boolean expression) {
+		
+	}
+	
+3. if else if else statement;
+	if (boolean expression) {
+		
+	}
+	else if (boolean expression) {
+		
+	}
+	else {
+		
+	}
+
+
+Continuous statement: Loop		Continuous statement: Loop		Continuous statement: Loop
+Continuous statement: Loop		Continuous statement: Loop		Continuous statement: Loop
+		 
+*To execute the same task/statement(s) several times 
+*repetitive tasks should be inside for/while loop 
+*in java, null means absence of an object; when we invoke a method without creating an object
+	
+1. For loop
+2. While loop
+3. For each loop
+
+1. for loop: initialization, boolean expression, and update, these these are three parts for for & while loop
+
+	for (starting value/initialization; boolean expression; new value of i = last value of i + 1){}
+
+	for (int i = 10; i <= 20; i = i + 1){}		// increment  = <; decrement = >;
+	
+	* for loop will terminate if the boolean expression is false
+	
+Mistake of for loop:
+1.  for (int i = 10; i > 30; i = i + 1){}	// here the loop will not work since i > 30;
+2. 	for (int i = 10; i <= 30; i = 1){}		// here the loop will not work since i = 1;
+	
+2. while loop:	
+
+	int x=10;		//Print 10 to 20
+	while (x<=20) {
+		System.out.println(x);		
+	x=x+1;
+	}
+	
+	int x=10;		//Print 10 to 20 except 15//
+	while (x<=20) {
+		if (x<15||x>15) {
+			System.out.println(x);
+		}		
+	x=x+1;
+	}
+
+Array[]		Array[]		Array[]		Array[]		Array[]
+Array[]		Array[]		Array[]		Array[]		Array[]
+
+
+* Array is a non-primitive data type
+* We can store multiple data in one variable/Array
+* Array contains indexes & elements
+* Array must contain similar data type (int/char/float/boolean/double/String or same type of object/same fruit:mango, etc.)
+* Mixed data type is not allowed
+* Array has one instance variable >>> length
+
+Process 1:
+
+Steps:
+1. Declare an Array: with[] symbol [int [] x;]
+
+2. initialize the size of the Array: [number of elements] [x=new int[5]]
+  *We need to create object for Non Primitive data type as above 
+  
+3. Store the element into Array: x[0]=30;
+
+public static void main(String[] args) {
+		
+		//Declare an Array:
+		int [] x;
+		//initialize the size of the array
+		x=new int[5];
+		//store all the elements into Array:
+		x[0]=30;
+		x[1]=70;
+		x[2]=35;	[if we do not save any index value, automatically the value of that index would be 0]
+		x[3]=90;
+		x[4]=83;
+		
+		System.out.println(x[4]);
+		System.out.println(x[2]);
+		System.out.println("--------------");
+		
+		for (int i=0;i<=4;i=i+1) {
+			System.out.println(x[i]);		// to see all elements (x[i]), or we can use index number
+		}
+	}
+	
+Process 2: Dynamic Array:
+
+Steps:
+1. Declare, initialize, and store all the elements into Array
+		
+		int [] x= {10,15,20,25,30,35};	// in array, {} = object, so new don't need to create object as previous process
+		
+		for (int i=0; i<=4; i=i+1) {
+			System.out.println(x[i]);
+		}
+
+Example:
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] x = {10,20,30,40,50};
+		int t=x.length;
+		System.out.println(t);
+		
+		for (int i=0; i<=t-1; i=i+1) {	// boolean expression must be t-1, otherwise it will show ArrayIndexOutOfBoundsException 
+			System.out.println(x[i]);	// because t starts from 0.
+		}
+
+
+String 		String		String		String		String
+String 		String		String		String		String
+
+
+* A set of character
+* String is a non primitive date type
+* Java has 35 built-in methods
+* Four methods are mostly used: length, charAt, subString, equals
+
+Steps:
+1. Create an object [String a=new String("We are learning Java")]
+
+OR		OR		OR		OR
+
+String a="We are learning Java"
+
+1. length Method: it will return number: number of char of a given string
+	String a = "We are learning Java"
+	int b=a.length();
+	sout(b)
+	
+2. charAt Method: it will accept index number and return the char of a given index
+	valid range of index = 0-t-1
+	char x = a.charAt(index number);
+	sout(x);
+	
+3. Substring Method:
+a)	a.substring(starting index)= it will accept starting index to last index & return rest of the string
+	String d = a.subString(3) 
+	sout (d) [it will print "are learning Java"]
+	
+b)	a.substring(starting index, ending index)= it will return specific portion of a string
+	*end/last index is always excluded
+	String m = a.substring(7,15) [it doesn't print last index] 
+	sout (m)	[it will print learning]
+	
+4. Equals Method: it will accept string argument and return boolean result
+	boolean n = a.equals(m) [it returns boolean  result]
+
+
+
+Object Oriented Programming (OOP)		Object Oriented Programming (OOP)
+Object Oriented Programming (OOP)		Object Oriented Programming (OOP)
+
+
+* OOPs is a design concept, which implements in Java/Python/C#
+
+Main concepts: more than 15 concepts
+1. Inheritance
+2. Polymorphism
+3. Abstraction
+
+1. Inheritance:
+	* it is an process, where a class/child class can access to variable & method from another/parent class
+	* parent cannot access to child class
+
+Instance Method:
+	
+	* Class A is a parent/base class (it has variable & method) <------- Class B is a child/derive class
+	* B can access to A by writing: B extends A
+	* Usually we create an object of B in a Tester class so that we invoke all methods and variables of A using B.
+	
+*	Internal invoke:
+	We create a methods in B (to invoke parent class methods) and invoke these methods from Tester class
+	
+*	External invoke:
+	We do not create a method in B to invoke method from A, 
+	instead, we create object of B class in Tester class  & call/invoke method from A (by B.)
+
+Instance Variable:
+	* B can access to A by writing: B extends A
+	* In case of instance variable, we create a constructor to initialize the instance variable
+	* If parent class A contains Constructor, the child class B will also have a Constructor
+	  Please note that, if A has instance variable, then A must have a Constructor
+	* Number of variables = number of arguments in Constructor
+	* Invoke the parent class Constructor inside child class Constructor by super keyword
+	* We shouldn't set up argument value within super, that would be hard coding
+		instead, we create argument(s) in constructor and write super (p, q) to invoke
+
+1. public class A3IV {
+	
+	int x;
+	int y;
+	
+	public A3IV(int a, int b) {
+		
+		x=a;		// initializing instance variable in a Constructor
+		y=b;
+	}
+	
+2. public class B3IV extends A3IV{
+
+	public B3IV (int p, int q) {		// to ignore hard coding we create arguments
+		super(p, q);				    // we can also give values here, that would be hard coding
+		// TODO Auto-generated constructor stub
+	}
+	
+3. public class Tester3IV {
+
+	public static void main(String[] args) {
+	
+		 								// new B3IV(200, 300) >>>>> within () we invoke Constructor
+		B3IV m=new B3IV(200, 300); 		// because B Constructor has arguments, so we write values here 
+										// B3IV(200, 300)= we are invoking Constructor here
+		int z=m.x;		// accessing parent class variable x & y
+		int w=m.y;
+		
+		System.out.println(z);
+		System.out.println(w);
+	}
+	
+Types of Inheritance:
+
+1. Multi-level: a child can have only one parent; parent might have one parent: grand>parent>child
+
+2. Multiple: child can have two or more parent
+
+	* Java doesn't support Multiple inheritance. Java overcomes this issue by interface
+	
+	
+Polimorphism: 		Polimorphism: 		Polimorphism: 		Polimorphism:
+Polimorphism: 		Polimorphism: 		Polimorphism: 		Polimorphism: 
+
+
+* Polimorphism = many form/behavior of Method (nor variable)
+* There are two ways to achieve Polimorphism:
+
+	1. Method overloading, also called Static Polimorphism, Compile Time Polimorphism
+	
+	2. Method overriding, also called Dynamic Polimorphism, Run Time Polimorphism
+
+1. Method overloading: (substring method is an example of Method overloading)
+	1. It happens in a/same class
+	2. All method names	are same but their arguments are different-
+		
+		We can differentiate based on:
+		a. no argument, single argument, multiple arguments: (no argument), (int x), (int x, int y)
+		b. rearranging the type of order of the arguments: (int x, String y), (String x, int y)
+		c. rearranging the data types of the arguments: (int x, int y), (String x, char y)
+		
+		We cannot differentiate based on:
+		a. return type: void Vs int/char/String
+		b. changing argument name: (int x, int y) >>> (int a, int b)
+		
+	public void add() {}		
+	public void add(int x, int y) {System.out.println(x+y);}
+	public void add(int x, String y) {}
+	public void add(String x, int y) {}
+	public void add(String x, String y) {System.out.println(x+" M "+y);}
+		
+	//Constructor Overloading
+	
+	public A1() {}		
+	public A1(int x, int y) {System.out.println(x+y);}
+	public A1(int x, String y) {}
+	public A1(String x, int y) {}
+	public A1(String x, String y) {System.out.println(x+" M "+y);}
+	
+ 
+Compile time = 1. read code, 2. check error, 3. generate byte code
+JVM = 1. read byte code, 2. transfer to machine level language	
+	
+2. Method overriding:
+	1. Happens in inheritance relationship
+	2. All method names are same & their arguments are same among the parent & child classes
+	3. Overriding is a run time polymorphism
+	4. Child class method (instead of parent class) is always called during the run time
+	
+	
+
+Abstraction			Abstraction			Abstraction			Abstraction
+Abstraction			Abstraction			Abstraction			Abstraction
+
+Abstraction: to hide the method detail
+	
+	Declare/implemented/concrete method >>>>>>>> Abstract/unimplemented method
+
+Declare/implemented/concrete method:
+
+	public void add(int x, int y){
+		z=x+y;
+		sout(z);
+	}
+	
+Abstract/unimplemented method: 
+	
+	abstract public void add(int x, int y); 
+	
+	1. it doesn't have body	{}
+	2. abstract keyword added 
+	3. we can store/keep abstract methods inside an abstract Class [Abstract class A{}] or interface [interface I{}]
+	
+	
+Abstract class:
+
+	abstract public void add(int x, int y); 
+	
+Interface:	
+	
+	abstract public void add(int x, int y); 
+
+Agreement:
+* Abstract class or interface is a blue print of a class
+* We write //extend// keyword in a regular class to get access to an abstract class 
+* All methods of an abstract class must be implemented into a regular class
+* Return type, argument type and number of arguments of all methods of an abstract class must remain same
+
+Abstract class:
+
+abstract class A1 {
+	
+	abstract public void add(int x, int y); 
+}
+
+Implementation of an Abstract class into a regular class:
+
+public class B1 extends A1{					// agreement = extends
+	
+	public void add(int x, int y) {			// implementing method 
+		int z=x+y;
+		System.out.println(z);
+	}
+}
+
+Tester class:
+
+	B1 m=new B1();
+		m.add(100, 500);
+
+
+Interface:	
+
+interface A2 {
+	
+	abstract public void add(int x, int y);
+}
+
+Implementation of an Interface into a regular class:
+
+public class B2 implements A2{			/ agreement = implements
+	
+	public void add(int x, int y) {
+		int z=x+y;
+		System.out.println(z);
+	}
+}
+
+Tester class:
+
+	B2 n =new B2();
+		n.add(20, 40);
+
+* Abstract class & Interface contain abstract methods
+* Abstract class may contain implemented method, however Interface cannot contain any implemented method
+* Do: public class B1 extends A1 implements I{}
+* Don't: public class B2 implements A2 extends I
+* We cannot extend two or more abstract classes into a regular class [XXX public B extends A, A1]
+* We can implement two or more interfaces into a regular class [√√√ public B implements I, I1]
+* We cannot directly create object of an abstract class or Interface, 
+* Instead we implement abstract class / interface into a regular class and then create object of a regular class
+* We can hide up to (since abstract class may contain implemented method) 100% using abstract class. 
+* We can hide 100% using Interface.
+* Multiple inheritance is implemented by Interface, because we can implement multiple classes with Interface
+
+
+Encapsulation:
+
+* To protect data & method as per requirements. Private data is not accessable. However, we can create a public method to get date or invoke a private method
+* Usually we create private data. So that, none can change the data/value.
+
+
+
+Collection:		Collection:		Collection:		Collection:
+Collection:		Collection:		Collection:		Collection:
+
+Collection: A group of object
+
+List:	1. List maintains the sequence or order of the object
+		2. It allows to hold duplicate object
+
+Set:	1. Set doesn't have any index
+		2. Set doesn't maintain any sequence or order of the object
+		3. It holds unique object
+		
+* List & Set they both are Interface, which means they have abstract/unimplemented methods.
+* Java has regular classes called ArrayList & HashSet, which contains following implemented methods:
+	
+	1. ArrayList: add(); remove(); size(); get();, a.contains(11), a.isEmpty()
+	2. HashSet: add(); remove(); size();, a.contains(11), a.isEmpty()
+	3. HashMap: a.size();, a.put(1, "One");, a.get(2), a.isEmpty()
+	  
+* We can create objects of ArrayList & HashSet, and invoke/use them
+
+Object creation : Create object: String x="Syed"; Create object of ArrayList/HashSet and then invoke methods
+
+				  ArrayList <String> m=new ArrayList<String>();
+				  HashSet <String> m=new HashSet<String>(); // <Generic type>
+				  Map <Integer, String> a=new HashMap <Integer, String>();	// <Integer, String>
+				  Map <String, String> b=new HashMap <String, String>();	// <String, String>()
+
+* For-each loop: used for collection 
+	
+	for (String i : m) {		// String=generic type
+			System.out.println(i);
+		}
+		
+* Iterator<String> k=m.iterator();	// print using Iterator // See HashSetExample1
+		while (k.hasNext()) {
+			System.out.println(k.next());
+		}
+
+
+				Array						Vs 					ArrayList
+		--------------------						  	   --------------------
+1. Array size is fixed							 ||		1. ArrayList size is Dynamic			
+2. It does not automatically grow/shrink		 ||		2. It grow/shrink automatically
+3. Array contains one instance variable-size	 ||		3. It has size, add, remove, get methods
+4. For loop										 ||		4. For/for each
+
+
+
+File Handling		File Handling		File Handling		File Handling
+File Handling		File Handling		File Handling		File Handling
+
+File:
+1. Text file: Readable, open in Notepad, TextEdit
+2. Binary file: Raw file and not readable
+
+1. Text file write: There are FileWriter [write()] & FileReader [read()] methods in Java to write/read text files.
+
+Steps:
+	1. file location path
+	2. object creation of FileWriter/FileReader class
+	3. Invoke the method
+	4. close the file
+	
+		String fileLocation="data/Example.txt";			// file path
+		
+		FileWriter fw=new FileWriter(fileLocation);		// object creation
+		
+		fw.write("This is my first file.");				// invoke method	
+		
+		fw.write("\nThis is my second line.");
+		
+		fw.close();										// close the file
+		
+* End of file marker value is -1
+* Nature of read(): read a character of a file and return an integer value.
+* when we call read again, it automatically goes to the next char
+
+	Text file reader:
+
+		String location="data/Example.txt";
+		
+		FileReader fr=new FileReader(location);
+		
+		for (int i=fr.read(); i!=-1; i=fr.read()) {			// check start;end;update
+			
+			char x=(char)i;									// casting
+			System.out.print(x);
+		}
+		
+		fr.close();
+
+
+2. Binary file: There are FileOutputStream, FileInputStream methods in Java to check binary files.
+
+	public static void main(String[] args) throws IOException {
+		
+		String location="data/Screenshot.png";
+		FileInputStream fi=new FileInputStream(location);
+		
+		String newFileLocation="data/abc.png";
+		FileOutputStream fo=new FileOutputStream(newFileLocation);
+		
+		for (int i=fi.read(); i!=-1; i=fi.read()) {			// we read & write same file to compare the result/image
+				byte x = (byte)i;
+				fo.write(x);
+		}
+		
+		fi.close();
+		fo.close();
+	}
+
+
+Maven:		Maven:		Maven:		Maven:		Maven:		
+Maven:		Maven:		Maven:		Maven:		Maven:		
+
+Maven: Automatically delete, update, download, upgrade all jars
+	
+is a:
+
+	Dependency management tool: QA
+	Build tool: Developer
+	Site management tool: Manager	
+	
+To deal with Excel files, we need to download following jars from Apache:
+
+1. Apache PoI.jar, version: 1.7
+2. Apache OOXML.jar, version: 1.7
+	
+Steps to work with Maven:
+
+1. Create a Maven project: 
+
+	1. >File>New>Other---
+	2. >Wizard: Maven Project
+	3. >Next
+	4. >Next> A row supposed to be selected, if not: >>Filter>maven-archetype-quickstart>> if not available, write and select the last one 
+	5. >Next>
+	6. >group id: opposite of domain name(com.yahoo); >artifact id: project name (excel)
+    7. >Finish
+    
+
+* Now we have Maven project with src/main/java, src/test/java, maven dependencies, pom.xml file etc.
+
+2. Open pom.xml file (configuration file):
+
+<dependencies>
+
+	<dependency>
+		delete junit dependency
+	<dependency>
+	
+<dependencies>
+
+2. Browse & add Apache PoI.jar 3.17 from mvnrepositiry.com, search for Apache PoI > Enter > click on first link > find 3.17 > click
+
+3. Copy the dependency
+
+4. Paste the dependency on pom.xml file
+	
+5. Add Apache OOXML.jar, version: 1.7 on pom.xml file
+
+Note: if jars are not available on Maven project, Goto Top on Eclipse>click on Project>"Build Automatically"
+	
+	
+Excel Write:
+
+	1. File location								// also create a folder naming data
+	2. Create an object of FileOutputStream
+	3. Write "Java"	on 0/0 of Excel as follows:
+	
+		a. Create Workbook
+		b. Create Sheet
+		c. Create Row
+		d. Create Column/cell
+		e. Set value "Java" under 0/0
+		
+	4. Write everything on FileOutputStream
+	5. Close Workbook
+	6. Close the file
+		
+	
+Excel Read:
+
+	1. File location							// String location = "data/book2.xlsx";		
+	2. Create an object of FileInputStream		// FileInputStream fs=new FileInputStream(location);
+	3. Excel get concept:
+	
+		a. Get Workbook from FileInputStream
+		b. Get Sheet from Workbook
+		c. Get Row from Sheet					||	loop concept
+		d. get column/cell from each Row		||	loop concept
+		e. get value from column/cell
+		f. print in console
+		
+	4. Close Workbook
+	5. Close the file
+
+* Rows & cells start from 0	
+	
+Here, a Sheet (is an obj) contains one/more Row & 		||loop
+	  a Row (is an obj) contains one/more Cell, 		||loop
+	  So, we can say object within object which a collection concept. So, we can use for-each loop, or a regular for loop.
+	  
+Read String:
+1. For-each loop
+
+public static void main(String[] args) throws IOException {
+		
+		String location = "data/book2.xlsx";
+		
+		FileInputStream fs=new FileInputStream(location);
+
+		Workbook wb=new XSSFWorkbook(fs);
+		
+		Sheet sh=wb.getSheet("Sheet1");
+			
+		for (Row rw:sh) {
+			
+			for(Cell cl:rw) {
+				
+				String value=cl.getStringCellValue();
+				
+				System.out.println(value);
+			}
+		}
+		
+		wb.close();
+		
+		fs.close();
+	}
+	
+Read Numeric Value:
+
+public static void main(String[] args) throws IOException {
+
+	String location = "data/book2.xlsx";
+
+	FileInputStream fs=new FileInputStream(location);
+
+	Workbook wb=new XSSFWorkbook(fs);
+		
+	Sheet sh=wb.getSheet("Sheet1");
+			
+	for (Row rw:sh) {	// row
+			
+		for(Cell cl:rw) {	// column	// data type could be String/Numeric, to read both, we add following if-else:
+				
+			if (cl.getCellType()==Cell.CELL_TYPE_STRING) {	// check data type
+					
+			String value=cl.getStringCellValue();
+			System.out.println(value);
+		}
+			else {											// data type could be int/double
+				if (cl.getNumericCellValue()%1==0) {
+					int x=(int)cl.getNumericCellValue();	//suppose we want int value// getNumericCellValue() returns double value
+					System.out.println(x);
+				}
+				else {
+					double y=cl.getNumericCellValue();	
+					System.out.println(y);
+				}
+			}
+		}
+	}
+	wb.close();
+		
+	fs.close();
+} 	
+
+Read String:
+1. For loop
+
+* For using for loop we need total number of rows & total number of column at the beginning:
+	int totalRow=sh.getPhysicalNumberOfRows();
+	int totalColumn = sh.getRow(0).getPhysicalNumberOfCells();
+
+*Calculation of total number of rows & total number of column:
+
+	String location = "data/book2.xlsx";
+	FileInputStream fs=new FileInputStream(location);
+	Workbook wb=new XSSFWorkbook(fs);
+	Sheet sh=wb.getSheet("Sheet1");
+	
+	int totalRow=sh.getPhysicalNumberOfRows();
+	int totalColumn = sh.getRow(0).getPhysicalNumberOfCells();
+
+Example:
+
+	public static void main(String[] args) throws IOException {
+	String location = "data/book2.xlsx";
+	FileInputStream fs=new FileInputStream(location);
+	Workbook wb=new XSSFWorkbook(fs);	
+	Sheet sh=wb.getSheet("Sheet1");
+		
+	// Calculation of total number of rows & total number of column:
+	int totalRow=sh.getPhysicalNumberOfRows();
+	int totalColumn = sh.getRow(0).getPhysicalNumberOfCells();
+			
+	for (int row=0; row<totalRow ; row++) {	// row
+			
+		for(int cell=0; cell<totalColumn; cell++) {	// column
+				
+			Cell cl=sh.getRow(row).getCell(cell);	// get the cell value
+				
+			if (cl.getCellType()==Cell.CELL_TYPE_STRING) {
+					
+			String value=cl.getStringCellValue();
+			System.out.println(value);
+		}
+			else {
+				if (cl.getNumericCellValue()%1==0) {
+					int x=(int)cl.getNumericCellValue();	//suppose we want int value// getNumericCellValue() returns double value
+					System.out.println(x);
+				}
+				else {
+					double y=cl.getNumericCellValue();	
+					System.out.println(y);
+				}
+			}
+		}
+	}
+		
+	wb.close();
+		
+	fs.close();
+}
+	
+	
+	
+	
+	
+	
+HTML		HHML		HHML		HHML		HHML
+HHML		HHML		HHML		HHML		HHML	
+	
+	
+Hyper Text: language written for network
+Mark up or Tag: <any code written inside>
+
+Types of Mark up or Tag:
+
+	HTML: Presentation/display data : Web page
+	XML:  To carry data from source to destination: Maven dependencies
+	
+Create a folder and a new file: Sample.html
+	
+	<html>	opening tag						
+	<body>
+	
+	<font color="green" size="15">
+	<h1> We are learning HTML		</h1>	// font = attribute; green=value // value written inside ""
+	</font>									// content = We are learning HTML
+											// Web Element=opening tag+content+closing tag
+	
+	</body>
+	</html>	closing tag
+	
+* Exception: Input tag doesn't have any content or closing tag (Input box, Input box with password, Radio button, Check box, button )
+* Attributes are separated by single space * No additional space is acceptable
+	
+Web Elements: We need to inspect: opening & closing tags, attribute, value and content 
+	
+	1. Text/Input box						// <input type="text">
+	2. Text/Input box with password concept	// <input type="password">
+	3. Drop down List box					// <select><option>Jan</option><option>Feb</option><option>Mar</option></select>
+	4. Radio button							// <input type="radio">
+	5. Checkbox								// <input type="checkbox">		//Checkbox=one word
+	6. Button								// <input type="button" value="Sign Up">
+	7. Link : redirect to another web page	// <a href="http://www.zoho.com">	Go to site	</a>   >>>> a=tag; href=attribute; http://www.zoho.com=attribute value; Go to site= content
+	8. Web Table: 
+	
+	<table border="2">
+	<tbody>
+	<tr><td>Number</td><td>Words</td></tr>
+	<tr><td>1</td><td>One</td></tr>
+	<tr><td>2</td><td>Two</td></tr>
+	<tr><td>3</td><td>Three</td></tr>
+	</tbody>
+	</table>
+	
+	9. Label = any other text
+	10. Auto suggestive 
+	
+
+Selenium lab setup:
+
+	1. Download Selenium java 2.53.0
+	2. Download Selenium server 2.53.0
+	3. Delete Jnit and add/download Dependencies from MVN repository
+	4. Download Driver (same version as current google chrome) unzip & create a folder in same project & paste the driver
+	5. For Mac user: keep the Driver in Download folder; just unzip & paste in download folder; no need to create a folder in the same project
+	
+Dependencies:
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.53.0</version>
+	</dependency>
+ 	 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>2.53.0</version>
+	</dependency>
+	
+	
+Create a Maven Project:
+
+	|-src/main/java
+	|-src/text/java
+	|-pom.xml
+
+
+Selenium		Selenium		Selenium		Selenium
+Selenium		Selenium		Selenium		Selenium
+
+
+Selenium: Web page automation tool
+API: Application Programming Interface>>>no user required
+GUI: Graphical User Interface>>>user required
+CLI: Command Line Interface>>>user required
+
+Request send:
+Eclipse (Java+Selenium) >>>> Web Driver API >>>> driver >>>> Web Browser >>http Protocol>> Facebook
+
+Response received:
+Eclipse (Java+Selenium) <<<<JSON-wire Protocol<<<< Web Driver API <<<< driver <<<< Web Browser <<<< Facebook
+	
+Manual approach:
+1. Open the GC browser
+2. Go to google.com
+3. Search Selenium
+
+Automation:
+1. 	
+	
+	//load the driver
+	System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+				
+	//1. open chrome  browser:
+	WebDriver driver=new ChromeDriver();
+	//2. go to gllgle.com
+	driver.get("https://login.yahoo.com/account/create");
+	//3. locate your web element & action
+	//a. locate your web element
+	WebElement fName=driver.findElement(By.xpath("//*[@id=\'usernamereg-firstName\']"));
+	//b. action: type something;  // By.xpath("xpath") returns By object; so argument of findElement() is By object; findElement() returns WebElement
+	fName.sendKeys("Selenium");
+	
+	
+	
+// By.xpath("xpath") returns By object; so argument of findElement() is By object; findElement() returns WebElement	
+// that's why WebElement search=driver.findElement(By.xpath("//*[@id=\'APjFqb\']"));
+
+Drop down List box must have select tag
+	Steps: 1. locate your web element [WebElement email=driver.findElement(By.xpath("//*[@id=\"yid-domain-selector\"]"));]
+		   2. Create an object of Selecl class [Select sel =new Select(email);]
+		   3. Action [sel.selectByVisibleText("myyahoo.com");]
+		
+* Number of WebElement/items/options: Select Class:
+		
+	WebElement year=driver.findElement(By.xpath("//*[@id=\'year\']"));		
+	Select sel1=new Select(year);
+	sel1.selectByVisibleText("1999");
+		
+	List <WebElement>number2 = sel1.getOptions();
+	int all=number2.size();
+	System.out.println(all);
+		
+	int number = sel1.getOptions().size();
+	System.out.println(number);
+	
+* Print all WebElement
+
+	List <WebElement> allOptions=command.getOptions();
+
+	for(WebElement i:allOptions) {
+		String p = i.getText();
+		System.out.println(p);				// to print all WebElements
+	}
+	
+* Check if an element is exists
+		
+		List <WebElement> allOptions=command.getOptions();
+		
+		boolean exists=false;
+		
+		for (WebElement i : allOptions) {
+			String text =i.getText();
+			if(text.equals("Selenium Commands")) {
+				exists=true;
+			}
+		}
+		if(exists==true) {
+			System.out.println("Your item exists");
+		}
+		else {
+			System.out.println("Your item does not exist");
+		}
+		
+		
+	
+1. WebDriver:
+
+	get("");
+	findElement();		// returns WebElement
+	findElements();		// list of WebElement
+	driver.getTitle();
+						
+2. WebElement:
+	
+	sendKeys("");
+	click();
+	getOptions()	// Select class items/options; //returns list of WebElement  
+	getText()		// Returns content
+	getAttribute
+	
+3. 	Select:
+
+	selectByVisibleText("");
+	.deselectAll();				// clear multiple selection:
+	.isMultiple();				// check if multiple selection is allowed or not
+	.getOptons();				//returns list of WebElement   
+	
+4.  Actions:
+
+	a.sendKeys(fName, "Selenium");
+	a.click();
+	a.contextClick(terms);
+	a.doubleClick();
+	a.sendKeys(fName, Keys.CONTROL+"a");
+	a.moveToElement(help);
+	a.dragAndDrop(source, destination);
+	a.perform();
+	
+5. TakesScreenshot:
+
+	getScreenshotAs	()			// getScreenshotAs(OutputType.FILE);
+	
+6. Assert:
+	
+	Assert.assertEquals(actual, expected);
+		
+1. Pick multiple items from Drop down list box
+2. Clear all selected multiple items
+3. Check if the multiple selection is allowed
+	
+	
+Actions class		Actions class		Actions class		Actions class		
+Actions class		Actions class		Actions class		Actions class		
+	
+Keyboard: ctrl+a, ctrl+v
+
+Mouse: double click, right click, drag&drop, 	
+	
+Other: click(), send keys(), 
+
+Steps:
+	1. Create an object of Actions class: Actions act=new Actions(driver);
+	
+	WebElement fName=driver.findElement(By.xpath("//*[@id=\'usernamereg-firstName\']"));
+		
+	Actions a=new Actions(driver);
+	a.sendKeys(fName, "Selenium");
+	a.perform();	
+	
+	
+
+Snapshot/Screenshot		Snapshot/Screenshot		Snapshot/Screenshot
+Snapshot/Screenshot		Snapshot/Screenshot		Snapshot/Screenshot
+
+
+* TakesScreenshot is an interface, made by Selenium
+* We cannot use it directly, that's why we convert/cast the driver to TakesScreenshot
+
+	System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+	WebDriver driver=new ChromeDriver();
+	driver.get("http://yahoo.com");
+		
+	TakesScreenshot ts=(TakesScreenshot) driver;
+		
+	// it will take a picture & save it to RAM
+	File source=ts.getScreenshotAs(OutputType.FILE);	
+	// here getScreenshotAs() returns File object	
+	// getScreenshotAs() >>> it takes different types of arguments
+	// OutputType is a class, FILE is an Constant & Static variable
+	// getScreenshotAs() returns value, based on argument type: FILE/Base64 etc.
+	// at this moment the screenshot is saved in Ram.
+	
+	// my destination:
+	File destination = new File("data/My_yahoo.png");
+		
+	// Copy the file from RAM to Hard disk: FileUtils.copyFile(source, destination);
+		
+	FileUtils.copyFile(source, destination);
+	
+* if we don't have FileUtils, we need to add //apache common io// jar from Maven repository to pom.xml
+	
+	
+Xpath		Xpath		Xpath		Xpath	
+Xpath		Xpath		Xpath		Xpath	
+	
+* Xpath is a expressional/ notational language, which is used to find the WebElement from the web page.	
+	
+	
+	/  = absolute xpath
+	// = relative xpath
+	*  = all element/tag
+	@  = attribute
+	[] = used as index, which start from 1
+	[] = condition /filter with condition
+	
+Methods:
+
+	contains(@attribute,'value')	
+	text()			to get content // this method is same as java getText()
+	
+	
+Example:
+
+	//* = all element of an web page	
+	//tag name = number of tag in a web page
+	//a = number of a tag/link in a web page
+	
+	Index: (//tag name)[index no] = (//input)[3]
+	
+	Condition: //tag name[@ attribute='value'] = //input[@name='firstname']		// we can also use index
+	
+	Contains method: 
+	//tag name[contains(@attribute,'value')] = //input[contains(@name,'first')]
+	
+	Text method:
+	//tag name [text()='content'] = //a[text()='Create new account']	// we can also use index
+	
+Tips:
+
+	//tag
+	[@ attribute='value']
+	[contains(@attribute,'value')]
+	[text()='content']
+	(//tag name)[index no]
+	
+	
+Note: Avoid attribute value with NUMBER	
+	
+	
+	
+DOM/Axis		DOM/Axis		DOM/Axis		DOM/Axis	
+DOM/Axis		DOM/Axis		DOM/Axis		DOM/Axis
+
+Document Object Modeling:
+
+* We can reach an unknown Xpath based on a known Xpath
+* parent---child---ancestor---descendant---following/preceding-sibling
+* straight line in html : sibling
+
+*** [xpath]/relation::tag		// if necessary, add more [condition] or [index]
+
+
+_____________1_____________
+			/\
+		   /  \
+		  2    3
+		 /		\
+		/		 \
+   ____/____  ____\_____
+	4  5  6	   7     8
+	/\        /\
+   /  \		 /  \
+  9   10    11  12
+  			/
+		   /
+		  13 
+
+Current location= 7
+
+* 7 --- one step up 3 = Parent (tag)
+* 7 --- one step down 11/12 = Child (tag)
+* 7 --- two or more step up 1 = Ancestor (tag)
+* 7 --- two or more step down 13 = Descendant (tag)
+* 7 --- same level forward 8 = Following-sibling
+* 5 --- same level forward 6 = Following-sibling
+* 5 --- same level backward 4 = Preceding-sibling
+
+Example 7 to 9:
+
+* 7___ancestor___1___descendant___9___
+* 7___parent___3___parent___1___child___2___child___4___child___9___
+* 7___parent___3___preceding sibling___2___descendant___9___
+
+
+
+Synchronization		Synchronization		Synchronization		Synchronization
+Synchronization		Synchronization		Synchronization		Synchronization
+
+Wait:
+
+1. Thread.sleep(1000);	-------- under java package/concept
+2. Implicit wait	-------- Selenium package/concept ------- kind of global wait
+3. Explicit wait	-------- Selenium package/concept ------- 
+
+* https://demos.telerik.com/aspnet-ajax/ajaxloadingpanel/functionality/explicit-show-hide/defaultcs.aspx
+* http://the-internet.herokuapp.com/dynamic_loading/2
+
+Implicit wait: driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+Explicit wait: time & condition
+
+	By locator = By.xpath("//*[text()='Hello World!']");
+	WebDriverWait wait = new WebDriverWait(driver, 15);		// time
+	wait.until(ExpectedConditions.presenceOfElementLocated(locator));	// condition
+				
+	WebElement fn=driver.findElement(locator);
+	String x = fn.getText();
+	System.out.println(x);
+
+
+*Window handle		*Window handle		*Window handle		*Window handle
+*Window handle		*Window handle		*Window handle		*Window handle
+
+* https://cars.hotels.com/#/searchcars
+* Methods:
+	1. driver.getWindowHandle();		// returns String of current window id
+	2. driver.getWindowHandles();		// returns set of window ids
+	3. driver.switchTo().window(id1);	// switch to a window
+
+	WebElement gnm=driver.findElement(By.xpath("//a[text()='Groups & Meetings']"));
+	gnm.click();
+		
+	String id1=driver.getWindowHandle();				// window id
+	System.out.println(id1);
+		
+	Thread.sleep(2000);
+		
+	Set <String> wins = driver.getWindowHandles();		// set of window id
+		
+	for(String i: wins) {
+		if (!i.equals(id1) ) {
+			driver.switchTo().window(i);				// switch to desired window
+		}
+	}
+	WebElement dst=driver.findElement(By.xpath("//input[@name='Destination1Text']"));
+	dst.sendKeys("New York");
+		
+	driver.switchTo().window(id1);
+		
+	WebElement pickDest=driver.findElement(By.xpath("//input[@id='pickupLocation']"));
+	pickDest.sendKeys("Ontario, Canada");
+
+
+*Frame		Frame		Frame		Frame
+*Frame		Frame		Frame		Frame
+
+* file:///Users/syedahmed/Desktop/Automation/Day%2027%20iframeexercise/FrameExample.html
+
+* Methods:
+	1. driver.switchTo().frame(index number of frame);		// this index starts from 0
+	2. driver.switchTo().defaultContent();					// switch to default content to send the driver back
+
+* Check whether the page has any frame by xpath: //iframe
+* if the input is inside the <iFrame> ...... <input>, then:
+
+1. Switch driver inside the desired frame: driver.switchTo().frame(0);
+2. Switch driver to the default content: driver.switchTo().defaultContent();
+
+
+*Pop up/Alert		*Pop up/Alert		*Pop up/Alert		*Pop up/Alert
+*Pop up/Alert		*Pop up/Alert		*Pop up/Alert		*Pop up/Alert
+
+Pop up/Alert:
+
+* Methods:
+
+	1. driver.switchTo().alert();
+	2. alt.getText();
+	3. alt.accept();
+	4. alt.dismiss();
+
+* We cannot inspect alert, so check whether the inspection option is available or not
+* The pase is disable
+
+Example: 
+
+	Alert alt = driver.switchTo().alert();	// returns Alert object
+	String msg=alt.getText();
+	System.out.println(msg);
+	alt.accept();
+
+
+
+	
+	
+	
+	
+	
+	
+TestNG:		TestNG:		TestNG:		TestNG:	
+TestNG:		TestNG:		TestNG:		TestNG:	
+
+*Java+Selenium >>> Automation
+*TestNG/Junit>>> Also called Testing Framework, Junit mostly used by the developer for unit Testing 
+	1. To verify the expected & actual result >>>>Pass or Fail/issue/defect/bug
+	2. Testing could be Manual Testing & Automation Testing
+
+Lab setup:
+
+1. Import TestNG dependency (6.10) & add to pom.xml
+2. Add plug-in from help/Eclipse Marketplace
+
+TestNG: (is a testing framework)
+
+1. TestNG allowed annotation @ Language (to glue pre-compile code with our code)
+2. It helps to perform parameterization Test (is a process where we test different set of data; to execute a test by set of test data)
+3. It allows parallel testing 
+4. Generate report automatically (Console, TestNG Tree view Report, Test Output folder report: index.html)
+   We can share index.html file.
+
+Note:
+1. Always write a method immediately after @
+2. No more Main class
+3. Create classes under src/test/java folder
+4. Tests/Methods run based on alphabetic order
+5. We can add attributes as follows: @Test (priority = 1, enabled = false)
+
+
+
+Methods used:
+
+1. Assert.assertEquals(actual, expected);
+2. @Before Class, @Test, @ DataProvider
+
+
+
+Example 1:
+@Test
+	public void fbTitleTest() throws InterruptedException {
+		
+	System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+	WebDriver driver=new ChromeDriver();
+	driver.get ("https://facebook.com");
+		
+	// we want to verify title of fb
+	String expected = "Facebook - log in or sign up";
+	String actual = driver.getTitle();
+		
+	Assert.assertEquals(actual, expected);
+		
+	}
+}
+
+Example 2:
+
+public class TitleTest2 {
+	
+	WebDriver driver;
+	
+	@BeforeClass 				// run before all test
+	public void setUp () {
+		System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+		driver=new ChromeDriver();
+	}
+	
+	@Test(priority = 2)			// setting attribute
+	public void fbTitleTest(){
+		
+		driver.get ("https://facebook.com");
+		String expected = "Facebook - log in or sign up";
+		String actual = driver.getTitle();
+		Assert.assertEquals(actual, expected);
+		
+	}
+	
+	@Test (priority = 1, enabled = false)		// setting multiple attributes
+	public void googleTitleTest() {
+		
+		driver.get ("http://google.com");
+		String expected = "Google";
+		String actual = driver.getTitle();
+		Assert.assertEquals(actual, expected);
+	}
+
+Data Provider		Data Provider		Data Provider		Data Provider
+Data Provider		Data Provider		Data Provider		Data Provider
+
+Data Provider Steps:
+
+1. Assign a name of DataProvider (where we assign value of a multidimensional Object array; it returns Object[][])
+2. Link with @Test
+3. Provide arguments in Test method
+4. Number of arguments = Number of columns, and argument type will be always String
+5. Number of execution=number of row
+
+Note:
+public class TestNG_Excel_Data_Provider {
+	
+	WebDriver driver;
+	
+	@BeforeClass 
+	public void setUp () {
+		
+		Contains three lines of code
+	}
+	
+	@Test(dataProvider = "dp")					// build relationship with the DataProvider	
+	public void fbTest(String cell value){		// number of arguments=number of cell values returns from DataProvider
+		
+		Contains WebElements & commands		
+
+	}
+	@DataProvider(name="dp")			// assign name to DataProvider
+	public Object [][] dataFeeder(){	// Object is a super class of any class in Java // [row][column]=two dimensional array
+		
+		Object [][] t = {{"",""},{"",""}};	// {}=row, inside a row, we have {cell1, cell2}
+	
+	return t;								// returns multidimensional array t
+	}
+}
+
+Examples:	
+public class TestNG_Data_Provider {
+	
+	WebDriver driver;
+	
+	@BeforeClass 
+	public void setUp () {
+		System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+		driver=new ChromeDriver();
+	}
+	
+	@Test(dataProvider = "dp")	
+	public void fbTest(String firstName, String lastName){		// 
+		
+		driver.get ("https://facebook.com/reg");
+		
+		WebElement fn=driver.findElement(By.xpath("//input[@name='firstname']"));
+		fn.clear();
+		fn.sendKeys(firstName);
+		WebElement ln=driver.findElement(By.xpath("//input[@name='lastname']"));
+		ln.clear();
+		ln.sendKeys(lastName);
+	}
+	@DataProvider(name="dp")			// assign name to DataProvider
+	public Object [][] dataFeeder(){	// Object is a super class of any class in Java // [row][column]=two dimensional array
+		
+		Object [][] t = {
+				{"Joe","Biden"},		// {}=row, inside a row, we have {cell1, cell2}
+				{"Kamala","Harris"}		// Returns multidimensional array t
+		};	
+	return t;	
+	}
+}	
+	
+ExcelReader		ExcelReader		ExcelReader		ExcelReader
+ExcelReader		ExcelReader		ExcelReader		ExcelReader
+	
+	1. Convert Excel to [][] Array; so,
+	2. We will create a ExcelReader class
+	3. We will create a excelToArray method, which will return Object[][]
+	
+	
+	
+	
+
+
+
+
+	
+	
+Parallel Testing 			Parallel Testing 			Parallel Testing 			Parallel Testing
+Parallel Testing 			Parallel Testing 			Parallel Testing 			Parallel Testing
+
+1. Same time: 1 @Test conducted in two or more different browsers
+2. Same time: 2 @Test conducted in two or more different browsers
+3. Same time: 2 @Test conducted in one browser
+	
+* Parallel Testing is a kind of parameterization test
+* We will receive data from xml file/testng.xml/configarationOfTestNG.xml	
+* @Parameters annotation will be used: xml>>>@Parameters annotation
+* We will run the program from testng.xml
+
+1. Install latest Firefox & gecko driver
+2. Create testng.xml file from a class file (right click>>>TestNG>>>convert to TestNG)
+3. Update jar from 2.53.0 to 3.14.0 (selenium-java & selenium-server)
+3. Add parallel="tests": <suite name="Suite" parallel="tests">
+4. Add test name: <test name="Chrome Browser">
+5. Add parameter name & value: <parameter name="browser" value="gc"></parameter>  // Parameter name must be same (here: "browser")    [
+6. Parameter name must be same (here: "browser"), it will be added before @Test as follows:
+7.  @Parameters("browser")
+    @Test
+    public void parallelTest() {
+	}
+8. Run as TestNG suite from xml file	
+	
+xml:
+
+<suite name="Suite" parallel="tests">		// if we don't add //parallel="tests"//, the tests will run one after another
+
+  <test name="Chrome Browser">
+  <parameter name="browser" value="gc"></parameter>
+    <classes>
+      <class name="day30_ParallelTesting.CrossBrowserTest"/>
+    </classes>
+  </test> 
+  
+  <test name="Firefox">
+  <parameter name="browser" value="ff"></parameter>
+    <classes>
+      <class name="day30_ParallelTesting.CrossBrowserTest"/>
+    </classes>
+  </test> 
+  
+</suite> 	
+
+class: 
+
+public class CrossBrowserTest {
+	
+	@Parameters("browser")
+	@Test
+	public void parallelTest(String browserName) {
+		WebDriver driver;
+		
+		if (browserName.equals("gc")){
+			System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+			driver = new ChromeDriver();
+			driver.get("http://www.zoho.com");
+		}
+		else if (browserName.equals("ff")){
+			System.setProperty("webdriver.gecko.driver", "/Users/syedahmed/Downloads/geckodriver");
+			driver = new FirefoxDriver();
+			driver.get("https://www.facebook.com");
+		}
+	}
+}	
+	
+
+TestNG annotation:
+
+1. @Test
+2. @BeforeClass
+3. @DataPrivider
+4. @Parameters			[BrowserStack is a company that offers cloud server/selenium grid for testing]
+5. @Before Suite [STCM], @After Suite
+6. @Befire Test [STCM], @After Test
+7. @Before Class [STCM], @After Class
+8. @Before Method [STCM], @After Method
+
+*** suite>>>test>>>class>>>method ***
+
+* A  Suite is a collection of Test	
+* A  Test is a collection of Class
+* A  Class is a collection of Method
+
+	
+	
+	
+Page Object Model	Page Object Model	Page Object Model	
+Page Object Model	Page Object Model	Page Object Model
+
+* Framework: is a set of rule or guideline: helpful for new employee, easy update
+
+1. Base Model
+2. Page Object Model
+2. Page Factory
+2. Base Test
+4. Test
+5.
+
+1. Page Object Model: is design pattern/framework; where page represents web page of an application 
+   and based on each web page we create variables and methods; variable represents WebElement of 
+   the web page and method represents action of that WebElement in a class.
+
+Steps:
+1. Create class with variable [WebElement] & method [action on WebElement, for example click]
+3. Create Testing:  Create object of the above class and invoke methods
+
+
+Create Mevan Project: fbPOMCanadaUsa(group & artifact id), maven-archetype-quick
+
+|--src/main/java|--model package   -- model classes
+|				|--page package    -- page classes
+|				|--library package -- common functionality: ExcelRead
+|
+|--src/test/java|--test package    -- test classes
+|
+|
+|--Maven dependency
+|--driver folder--for windows
+|--data folder
+|--screenshot folder
+|--pom.xml file: delete jUnit & add dependencies:
+|--testng.xml file: selenium-java, selenium-server, apache PoI.jar,Apache OOXML.jar, testng
+|--Excelfile
+
+1. Apache PoI.jar, version: 1.7
+2. Apache OOXML.jar, version: 1.7
+3. selenium-java, version 3.14.0
+4. selenium-server, version 3.14.0
+
+1.  Create:
+	
+	BaseModel Class [instance variable: driver]
+	HomeModel Class [contains all variables],[variables>>>>model]: HomeModel Class extends BaseModel
+	HomePage Class[contains all methods],  [methods>>>>page]: HomePage Class extends HomeModel Class
+	@HomePageTest Class, which extends BaseTest class
+	BaseTest class[@Before Suite: 3 lines of code
+
+Details:
+
+1.  Create:
+	
+*** BaseModel Class [contains instance variable: driver & constructor]:
+
+	public class BaseModel {
+	
+		WebDriver driver;
+	
+		public BaseModel(WebDriver d) {
+			driver=d;
+		}
+	}
+
+*** HomeModel Class extends BaseModel Class. Since, its parent class [BaseModel Class] has instance variable, 
+    we need to create constructor. Then we create methods that returns WebElement/variables, [variable >>>>Model]
+
+	public class HomeModel extends BaseModel{
+	
+		public HomeModel(WebDriver d) {
+			 super (d);
+		}
+
+		public WebElement callCreateNewAccount() {
+			WebElement e = driver.findElement(By.xpath("//a[text()='Create new account']"));
+			return e;
+		}
+	}
+
+*** HomePage Class extends HomeModel Class. We need to create constructor since its parent class has constructor. 
+    HomePage Class contains all action methods. We will call HomeModel Class method [which contains WebElement] 
+    inside of a method and then act [i.e., click].  [methods>>>>Page]:
+
+	public class HomePage extends HomeModel{
+
+		public HomePage (WebDriver d) {
+			super (d);
+		}
+	
+		public void clickOnCreateNewAccount() {
+			WebElement e = callCreateNewAccount();
+			e.click();
+		}
+	}
+
+
+*** BaseTest class contains setUp method [3 lines of code] with @Before Suite annotation. 
+    It also contains static vatrables like static WebDriver (we don’t create constructor because this is static). 
+    Since we create HomePage Class object here, we will also have static HomePage variable (hp) variable here 
+    and then create the Object inside of a method.
+
+
+	public class BaseTest {
+	
+		static WebDriver driver;
+		static HomePage hp;
+	
+		@BeforeSuite
+		public void setUp() {
+			System.setProperty("webdriver.chrome.driver", "/Users/syedahmed/Downloads/chromedriver");
+			driver = new ChromeDriver();
+			driver.get("https://www.facebook.com/");
+		}
+	
+		public void getHomePage() {
+			hp=new HomePage(driver);
+		}
+	}
+
+*** @HomePageTest Class extends BaseTest class: Here, we will call HomePage Class method for testing. 
+    So, we need to create Object of HomePage Class. Instead of creating HomePage Class here, 
+    we will create it inside BaseTest class and then call the method. 
+
+	public class HomePageTest extends BaseTest{
+	
+		@Test
+		public void hpTest() {
+			getHomePage();					// create an object of HomePage in BaseTest class, then invoke the method of HomePage from here
+			hp.clickOnCreateNewAccount();
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	

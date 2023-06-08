@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-28T05:39:08Z" name="Suite" finished-at="2023-05-28T05:39:11Z" duration-ms="3138">
+    <groups>
+    </groups>
+    <test started-at="2023-05-28T05:39:08Z" name="Test" finished-at="2023-05-28T05:39:11Z" duration-ms="3138">
+      <class name="test.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HomePageTest@7e6ef134]" started-at="2023-05-28T01:39:05Z" name="setUp" finished-at="2023-05-28T01:39:08Z" duration-ms="3669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="hpTest()[pri:0, instance:test.HomePageTest@7e6ef134]" started-at="2023-05-28T01:39:08Z" name="hpTest" finished-at="2023-05-28T01:39:08Z" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hpTest -->
+      </class> <!-- test.HomePageTest -->
+      <class name="test.CreatePageTest">
+        <test-method signature="createAccountPageTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.CreatePageTest@1f010bf0]" started-at="2023-05-28T01:39:09Z" name="createAccountPageTest" data-provider="dp" finished-at="2023-05-28T01:39:10Z" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Biden]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ahmedzia123@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hggxhgwxv^*]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1930]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jul]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountPageTest -->
+        <test-method signature="createAccountPageTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.CreatePageTest@1f010bf0]" started-at="2023-05-28T01:39:10Z" name="createAccountPageTest" data-provider="dp" finished-at="2023-05-28T01:39:11Z" duration-ms="815" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kamala]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Harris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[87678878]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hgvg54]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1940]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dec]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountPageTest -->
+        <test-method signature="createAccountPageTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.CreatePageTest@1f010bf0]" started-at="2023-05-28T01:39:11Z" name="createAccountPageTest" data-provider="dp" finished-at="2023-05-28T01:39:11Z" duration-ms="769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[George]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bush]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9873232]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[khjbabxe55]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1935]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jan]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountPageTest -->
+      </class> <!-- test.CreatePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
